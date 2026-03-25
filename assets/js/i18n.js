@@ -24,7 +24,7 @@
       "titles.gallery": "Grand Kosova Restaurant | Galeri",
 
       "footer.afterYear":
-        " Restaurant Grand Kosova, Rogovë e Hasit, Gjakovë. Të gjitha të drejtat e rezervuara.",
+        " Developed By Drilon Gashi, Restaurant Grand Kosova, Rogovë e Hasit, Gjakovë. Të gjitha të drejtat e rezervuara.",
       "footer.instagram": "Instagram",
       "footer.whatsapp": "WhatsApp",
 
