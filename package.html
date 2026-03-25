@@ -1,0 +1,826 @@
+<!doctype html>
+<html lang="sq">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="titles.package">Grand Kosova Restaurant | Menu</title>
+    <link rel="icon" href="assets/images/logo.png" type="image/png" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/css/styles.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="assets/js/i18n.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script defer src="assets/js/drinks-carousel.js"></script>
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark gk-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/images/logo.png" alt="Restaurant Grand Kosova" />
+          <h3>Restaurant Grand Kosova</h3>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html" data-i18n="nav.home">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="package.html" data-i18n="nav.menu">Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html" data-i18n="nav.about">Rreth Nesh</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html" data-i18n="nav.gallery">Galeri</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html" data-i18n="nav.contact">Kontakti</a></li>
+            <li class="nav-item ms-lg-2 d-flex align-items-center">
+              <div class="gk-lang-switch" role="group" data-i18n-attr="aria-label:lang.aria">
+                <button type="button" class="gk-lang-btn" data-gk-lang="sq" title="Shqip">SQ</button>
+                <button type="button" class="gk-lang-btn" data-gk-lang="en" title="English">EN</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="navbar-separator"></div>
+
+    <!-- ========== PACKAGES HERO ========== -->
+    <section class="packages-hero">
+      <div class="packages-hero-overlay"></div>
+      <div class="container packages-hero-content" data-aos="fade-up">
+        <p class="badge-text" data-i18n="pkg.badge">Menu</p>
+        <h1 data-i18n="pkg.hero.h">Menu dasmash për çdo vizion</h1>
+        <p class="subtitle" data-i18n="pkg.hero.sub">
+          Zgjidhni nga menutë tona të kuruara me kujdes – nga menutë klasike deri te ato luksoze,
+          me mundësi shtesë sipas dëshirës suaj.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========== PACKAGES LIST ========== -->
+    <section class="packages-section">
+      <div class="container">
+        <div class="packages-grid">
+          
+          <article class="package-card" data-aos="fade-up">
+            <div class="package-img">
+              <img src="assets/images/menu.webp" alt="Menu 1" />
+            </div>
+            <div class="package-content">
+              <h3>Menu 1</h3>
+              <p class="package-tagline" data-i18n="pkg.m1.tag">Grand Kosova Menu 1</p>
+              <button
+                class="btn-outline-gold w-100 mb-3"
+                type="button"
+                onclick="toggleMenu('menuSilver1')"
+                data-i18n="pkg.m1.btn"
+              >
+                Shiko Menunë
+              </button>
+              <div id="menuSilver1" class="package-menu">
+                <ul>
+                  <li data-i18n="pkg.m1.i1">
+                    Sallatë e kombinuar (speca me sos, sallatë të gjelbërta, ullinj) për person
+                  </li>
+                  <li data-i18n="pkg.m1.i2">
+                    Paragjellë e kombinuar (proshutë, kaçkavall, djathë, suxhuk)
+                  </li>
+                  <li data-i18n="pkg.m1.i3">
+                    Specialitete nga skara: pljeskavicë, shpatull pule me sos; ramstek me perime të fërguara
+                  </li>
+                  <li data-i18n="pkg.m1.i4">
+                    Lëng frutash në qelq 0,25 l — mollë, pjeshkë, portokall
+                  </li>
+                  <li data-i18n="pkg.m1.i5">
+                    Pijet e gazuara në qelq 0,25 l: Coca-Cola, Fanta, Schweppes, Sprite, Red Eagle; ujë i gazuar, ujë natyral
+                  </li>
+                  <li data-i18n="pkg.m1.i6">
+                    Pijet alkoolike: Smirnoff, Ballantine’s, Shtok, raki rrushi; verë e bardhë, verë e kuqe (Bodrumi i vjetër – Haxhijaha); birrë e Pejës, Shkupi
+                  </li>
+                  <li data-i18n="pkg.m1.i7">Torta e nuses: tortë për të gjithë mysafirët</li>
+                  <li data-i18n="pkg.m1.i8">Pije pa kufi</li>
+                </ul>
+              </div>
+              <a href="contact.html" class="btn-gold reserve-btn" data-i18n="pkg.reserve">Rezervo</a>
+            </div>
+          </article>
+
+          <article class="package-card highlight" data-aos="fade-up" data-aos-delay="100">
+            <div class="package-badge" data-i18n="pkg.m2.badge">Më e kërkuara</div>
+            <div class="package-img">
+              <img src="assets/images/menu.webp" alt="Menu 2" />
+            </div>
+            <div class="package-content">
+              <h3>Menu 2</h3>
+              <p class="package-tagline" data-i18n="pkg.m2.tag">Grand Kosova Menu 2</p>
+              <button
+                class="btn-outline-gold w-100 mb-3"
+                type="button"
+                onclick="toggleMenu('menuGold')"
+                data-i18n="pkg.m2.btn"
+              >
+                Shiko Menunë
+              </button>
+              <div id="menuGold" class="package-menu">
+                <ul>
+                  <li data-i18n="pkg.m2.i1">
+                    Sallatë e kombinuar (speca me sos, sallatë të gjelbërta, ullinj) për person
+                  </li>
+                  <li data-i18n="pkg.m2.i2">
+                    Paragjellë e kombinuar (proshutë, kaçkavall, djathë, suxhuk)
+                  </li>
+                  <li data-i18n="pkg.m2.i3">
+                    Specialitete nga skara: pljeskavicë, shpatull pule me sos, bombic me kaçkavall; mish viçi me
+                    sos kepurdhash dhe perime
+                  </li>
+                  <li data-i18n="pkg.m2.i4">
+                    Lëng frutash të vogëla 0,50 l — mollë, portokall, vishnje, boronicë, pjeshkë
+                  </li>
+                  <li data-i18n="pkg.m2.i5">
+                    Pijet e gazuara të vogëla 0,50 l: Coca-Cola, Fanta, Schweppes, Sprite, Red Eagle; ujë i gazuar,
+                    ujë natyral
+                  </li>
+                  <li data-i18n="pkg.m2.i6">
+                    Pijet alkoolike: Smirnoff, Shtok, raki rrushi; verë e bardhë, verë e kuqe; birrë e Pejës, birrë e
+                    Shkupit
+                  </li>
+                  <li data-i18n="pkg.m2.i7">Torta e nuses: tortë për të gjithë mysafirët</li>
+                  <li data-i18n="pkg.m2.i8">Pije pa kufi</li>
+                </ul>
+              </div>
+              <a href="contact.html" class="btn-gold reserve-btn" data-i18n="pkg.reserve">Rezervo</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Same manifest as gallery.html — edit assets/gallery.json (gallery + drinks) -->
+    <script id="galleryData" type="application/json">
+{
+  "gallery": [
+    "assets/images/gallery/11.jpg",
+    "assets/images/gallery/12.jpg",
+    "assets/images/gallery/13.jpg",
+    "assets/images/gallery/14.jpg",
+    "assets/images/gallery/15.jpg",
+    "assets/images/gallery/16.jpg",
+    "assets/images/gallery/17.jpg",
+    "assets/images/gallery/1774179525814900.jpg",
+    "assets/images/gallery/1774179526381956.jpg",
+    "assets/images/gallery/1774179527394996.jpg",
+    "assets/images/gallery/1774179572385422.jpg",
+    "assets/images/gallery/1774179574874706.jpg",
+    "assets/images/gallery/1774179577471511.jpg",
+    "assets/images/gallery/18.jpg",
+    "assets/images/gallery/19.jpg",
+    "assets/images/gallery/20.jpg",
+    "assets/images/gallery/21.jpg",
+    "assets/images/gallery/22.jpg",
+    "assets/images/gallery/23.jpg",
+    "assets/images/gallery/55.jpg",
+    "assets/images/gallery/56.jpg",
+    "assets/images/gallery/57.jpg",
+    "assets/images/gallery/58.jpg",
+    "assets/images/gallery/59.jpg",
+    "assets/images/gallery/60.jpg",
+    "assets/images/gallery/61.jpg",
+    "assets/images/gallery/62.jpg",
+    "assets/images/gallery/A.jpg",
+    "assets/images/gallery/aa.jpg",
+    "assets/images/gallery/B.jpg",
+    "assets/images/gallery/bb.jpg",
+    "assets/images/gallery/C.jpg",
+    "assets/images/gallery/D.jpg",
+    "assets/images/gallery/E.jpg",
+    "assets/images/gallery/F.jpg",
+    "assets/images/gallery/gallery4.jpg",
+    "assets/images/gallery/gallery5.jpg",
+    "assets/images/gallery/gallery6.jpg",
+    "assets/images/gallery/grand.jpg",
+    "assets/images/gallery/ii.jpg",
+    "assets/images/gallery/index1.jpg",
+    "assets/images/gallery/index3.jpg",
+    "assets/images/gallery/J.jpg",
+    "assets/images/gallery/kk.jpg",
+    "assets/images/gallery/L.jpg",
+    "assets/images/gallery/ll.jpg",
+    "assets/images/gallery/mm.jpg",
+    "assets/images/gallery/oo.jpg",
+    "assets/images/gallery/R.jpg",
+    "assets/images/gallery/rr.jpg",
+    "assets/images/gallery/T.jpg",
+    "assets/images/gallery/tt.jpg",
+    "assets/images/gallery/U.jpg",
+    "assets/images/gallery/yy.jpg"
+  ],
+  "drinks": [
+    "assets/images/drinks/viber_image_2026-03-22_21-40-03-424.jpg",
+    "assets/images/drinks/jack.jpg",
+    "assets/images/drinks/ch.png",
+    "assets/images/drinks/GGOOSE.webp",
+    "assets/images/drinks/viber_image_2026-03-22_21-40-03-369.jpg",
+    "assets/images/drinks/marlboro-gold-20s-duty-free-002.jpg",
+    "assets/images/drinks/marlboro-touch-blue-20s-001.jpg",
+    "assets/images/drinks/marlboro-red-20s-001.jpg",
+    "assets/images/drinks/cigar.jpg"
+  ]
+}
+    </script>
+
+    <!-- ========== Extra (galeri) ========== -->
+    <section class="drinks-extra-section" data-aos="fade-up" aria-labelledby="drinksExtraTitle">
+      <div class="container">
+        <h2 id="drinksExtraTitle" class="drinks-extra-title text-center" data-i18n="pkg.drinks.h">
+          Extra
+        </h2>
+        <p class="drinks-extra-sub text-center" data-i18n="pkg.drinks.sub">
+          Pije, duhan dhe më shumë sipas kërkesës — shfletoni galerinë më poshtë.
+        </p>
+
+        <div
+          class="drinks-carousel-wrap"
+          role="region"
+          aria-roledescription="carousel"
+          data-i18n-attr="aria-label:pkg.drinks.region"
+          aria-label="Galeri pijesh"
+          tabindex="0"
+        >
+          <button
+            type="button"
+            class="drinks-nav drinks-prev"
+            data-i18n-attr="aria-label:pkg.drinks.prev"
+            aria-label="Foto e mëparshme"
+          >
+            &#8249;
+          </button>
+          <div class="drinks-carousel-viewport">
+            <img
+              id="drinksCarouselImg"
+              src="assets/images/drinks/viber_image_2026-03-22_21-40-03-424.jpg"
+              alt="Extra"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <button
+            type="button"
+            class="drinks-nav drinks-next"
+            data-i18n-attr="aria-label:pkg.drinks.next"
+            aria-label="Foto tjetër"
+          >
+            &#8250;
+          </button>
+        </div>
+        <div class="drinks-meta text-center">
+          <span id="drinksCounter" class="drinks-counter" aria-live="polite"></span>
+        </div>
+        <div
+          id="drinksDots"
+          class="drinks-dots text-center"
+          role="tablist"
+          data-i18n-attr="aria-label:pkg.drinks.dots"
+          aria-label="Zgjidh foto"
+        ></div>
+        <p
+          id="drinksEmpty"
+          class="text-center drinks-empty d-none"
+          data-i18n-html="pkg.drinks.empty"
+        >
+          Shto foto në <code>assets/images/drinks/</code> dhe shto rrugët në
+          <code>assets/gallery.json</code> te fusha <code>drinks</code> (edhe në <code>galleryData</code> nëse përdor
+          skedarë lokalë pa server).
+        </p>
+      </div>
+    </section>
+
+    <script>
+      function toggleMenu(id) {
+        const menu = document.getElementById(id);
+        if (!menu) return;
+        if (menu.style.display === "none" || menu.style.display === "") {
+          menu.style.display = "block";
+        } else {
+          menu.style.display = "none";
+        }
+      }
+    </script>
+
+    <style>
+      body {
+        background-color: #000 !important;
+        color: #d4af37 !important;
+      }
+
+      /* Vetëm përmbajtja e menysë — jo nav (Bootstrap + assets/css/styles.css .gk-navbar) */
+      .packages-hero h1,
+      .packages-hero p,
+      .packages-hero .badge-text,
+      .packages-section .package-content h3,
+      .packages-section .package-content p,
+      .packages-section .package-tagline,
+      .package-menu li,
+      .drinks-extra-section .drinks-extra-title,
+      .drinks-extra-section .drinks-extra-sub {
+        color: #d4af37 !important;
+      }
+
+      footer.bg-light,
+      footer.bg-light p {
+        color: #d4af37 !important;
+      }
+
+      footer.bg-light a {
+        color: #d4af37 !important;
+      }
+
+      footer.bg-light a:hover {
+        color: #b8962e !important;
+      }
+
+      .btn-gold {
+        display: inline-block;
+        background-color: #d4af37 !important;
+        color: #000 !important;
+        padding: 0.9rem 2.5rem;
+        border-radius: 50px;
+        border: 2px solid #d4af37;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        transition: all 0.3s ease;
+      }
+
+      .btn-gold:hover {
+        background-color: transparent !important;
+        color: #d4af37 !important;
+      }
+
+      .btn-outline-gold {
+        display: inline-block;
+        border: 2px solid #d4af37;
+        color: #d4af37;
+        background-color: transparent;
+        font-weight: 600;
+        border-radius: 50px;
+        padding: 0.7rem 1.6rem;
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+      }
+
+      .btn-outline-gold:hover {
+        background-color: #d4af37;
+        color: #000;
+      }
+
+      /* HERO */
+      .packages-hero {
+        position: relative;
+        padding: 120px 0 80px;
+        background: url("assets/images/gallery/grand.jpg") center/cover no-repeat;
+      }
+
+      .packages-hero-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.8),
+          rgba(0, 0, 0, 0.9)
+        );
+      }
+
+      .packages-hero-content {
+        position: relative;
+        z-index: 2;
+        max-width: 800px;
+      }
+
+      .packages-hero .badge-text {
+        display: inline-block;
+        padding: 0.3rem 1rem;
+        border-radius: 999px;
+        border: 1px solid rgba(212, 175, 55, 0.6);
+        font-size: 0.8rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+      }
+
+      .packages-hero h1 {
+        font-size: 2.6rem;
+        font-weight: 800;
+        margin-bottom: 1rem;
+      }
+
+      .packages-hero .subtitle {
+        font-size: 1.05rem;
+        max-width: 650px;
+      }
+
+      /* PACKAGES GRID */
+      .packages-section {
+        padding: 80px 0 60px;
+        background: #050505;
+      }
+
+      .packages-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2rem;
+        max-width: 980px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .package-card {
+        background: #141414;
+        border-radius: 24px;
+        overflow: hidden;
+        border: 1px solid rgba(212, 175, 55, 0.4);
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+      }
+
+      .package-card.highlight {
+        border-color: #d4af37;
+        transform: translateY(-5px);
+      }
+
+      .package-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 30px 70px rgba(212, 175, 55, 0.25);
+        border-color: #d4af37;
+      }
+
+      .package-badge {
+        position: absolute;
+        z-index: 3;
+        top: 18px;
+        right: 18px;
+        padding: 0.3rem 0.9rem;
+        border-radius: 999px;
+        background: #d4af37;
+        color: #000;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 700;
+      }
+
+      .package-img {
+        position: relative;
+        height: 210px;
+        overflow: hidden;
+      }
+
+      .package-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.6s ease;
+      }
+
+      .package-card:hover .package-img img {
+        transform: scale(1.08);
+      }
+
+      .package-content {
+        padding: 1.8rem 1.6rem 1.9rem;
+        flex: 1;
+      }
+
+      .package-content h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .package-price {
+        margin-bottom: 0.6rem;
+        font-size: 0.95rem;
+      }
+
+      .package-price span {
+        font-size: 1.4rem;
+        font-weight: 800;
+      }
+
+      .package-tagline {
+        font-size: 0.95rem;
+        margin-bottom: 1.1rem;
+      }
+
+      .reserve-btn {
+        display: block;
+        width: fit-content;
+        margin: 0.9rem auto 0;
+        text-decoration: none !important;
+      }
+
+      .reserve-btn:hover,
+      .reserve-btn:focus {
+        text-decoration: none !important;
+      }
+
+      .package-menu {
+        display: none;
+        border-radius: 14px;
+        padding: 14px 14px 10px;
+        margin-top: 8px;
+        background-color: #000;
+        border: 1px solid rgba(212, 175, 55, 0.5);
+      }
+
+      .package-menu ul {
+        padding-left: 1.2rem;
+        margin-bottom: 0;
+      }
+
+      .package-menu ul li {
+        margin-bottom: 6px;
+        font-size: 0.92rem;
+        color: #f4e9c7 !important;
+      }
+
+      /* PIJE EXTRA — carousel */
+      .drinks-extra-section {
+        padding: 70px 0 90px;
+        background: #0b0b0b;
+      }
+
+      .drinks-extra-title {
+        font-size: clamp(1.75rem, 4vw, 2.5rem);
+        font-weight: 800;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        margin-bottom: 0.75rem;
+      }
+
+      .drinks-extra-sub {
+        font-size: 0.98rem;
+        max-width: 560px;
+        margin: 0 auto 2rem;
+        color: #e8d9a8 !important;
+        opacity: 0.95;
+      }
+
+      .drinks-carousel-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.75rem;
+        max-width: 920px;
+        margin: 0 auto;
+        outline: none;
+      }
+
+      .drinks-carousel-wrap:focus-visible {
+        outline: 2px solid rgba(255, 255, 255, 0.35);
+        outline-offset: 4px;
+        border-radius: 20px;
+      }
+
+      /* Box i fiksuar lartësi — çdo format (portret/peizazh, jpg/png/webp) qëndron i plotë brenda */
+      .drinks-carousel-viewport {
+        flex: 1;
+        min-width: 0;
+        border-radius: 20px;
+        overflow: hidden;
+        border: none;
+        background: radial-gradient(ellipse at center, #1a1a1a 0%, #0a0a0a 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: min(70vh, 560px);
+        min-height: min(45vh, 380px);
+        max-height: min(70vh, 560px);
+        touch-action: pan-y pinch-zoom;
+      }
+
+      .drinks-carousel-viewport img {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        object-position: center;
+        display: block;
+        user-select: none;
+        pointer-events: none;
+      }
+
+      .drinks-nav {
+        flex-shrink: 0;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        border: 2px solid #d4af37;
+        background: rgba(0, 0, 0, 0.6);
+        color: #d4af37 !important;
+        font-size: 1.5rem;
+        line-height: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: background 0.2s ease, transform 0.2s ease;
+      }
+
+      .drinks-nav:hover {
+        background: rgba(212, 175, 55, 0.2);
+      }
+
+      .drinks-nav:active {
+        transform: scale(0.96);
+      }
+
+      .drinks-meta {
+        margin-top: 1rem;
+      }
+
+      .drinks-counter {
+        font-size: 0.9rem;
+        letter-spacing: 0.08em;
+        color: #f4e9c7 !important;
+      }
+
+      .drinks-dots {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+        margin-top: 1rem;
+      }
+
+      .drinks-dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: 1px solid rgba(212, 175, 55, 0.6);
+        background: transparent;
+        padding: 0;
+        cursor: pointer;
+        transition: background 0.2s ease, transform 0.2s ease;
+      }
+
+      .drinks-dot.is-active {
+        background: #d4af37;
+        transform: scale(1.15);
+      }
+
+      .drinks-empty code {
+        color: #f4e9c7;
+        font-size: 0.85em;
+      }
+
+      /* FOOTER DARK */
+      .bg-light {
+        background-color: #000 !important;
+      }
+
+      .text-dark {
+        color: #d4af37 !important;
+      }
+
+      footer {
+        border-top: 1px solid rgba(212, 175, 55, 0.3);
+      }
+
+      footer p,
+      footer a {
+        color: #d4af37 !important;
+      }
+
+      footer a:hover {
+        color: #b8962e !important;
+      }
+
+      /* RESPONSIVE */
+      @media (max-width: 991px) {
+        .packages-hero {
+          padding-top: 110px;
+          padding-bottom: 70px;
+        }
+
+        .packages-hero h1 {
+          font-size: 2.2rem;
+        }
+
+        .packages-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          max-width: none;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .packages-grid {
+          grid-template-columns: minmax(0, 1fr);
+        }
+
+        .package-img {
+          height: 190px;
+        }
+
+        .packages-section {
+          padding: 60px 0 50px;
+        }
+
+        .drinks-carousel-wrap {
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 0.75rem;
+        }
+
+        .drinks-nav {
+          width: 44px;
+          height: 44px;
+          font-size: 1.35rem;
+        }
+
+        .drinks-carousel-viewport {
+          order: -1;
+          flex: 1 1 100%;
+          width: 100%;
+          height: min(62vh, 500px);
+          min-height: min(42vh, 340px);
+          max-height: min(62vh, 500px);
+        }
+      }
+
+      @media (max-width: 480px) {
+        .packages-hero {
+          padding: 96px 12px 56px;
+        }
+
+        .packages-hero h1 {
+          font-size: clamp(1.45rem, 6vw, 2rem);
+        }
+
+        .packages-hero .subtitle {
+          font-size: 0.95rem;
+        }
+      }
+    </style>
+
+    <footer class="bg-light text-dark pt-5 mt-5">
+      <div class="container text-center">
+        <p>
+          © <span id="footerYear"></span
+          ><span data-i18n="footer.afterYear">
+            Restaurant Grand Kosova, Rogovë e Hasit, Gjakovë. Të gjitha të drejtat e rezervuara.</span
+          >
+        </p>
+        <p>
+          <a
+            href="https://www.instagram.com/grandkosova"
+            target="_blank"
+            rel="noreferrer"
+            data-i18n="footer.instagram"
+            >Instagram</a
+          >
+          |
+          <a
+            href="https://api.whatsapp.com/send?phone=38344160278"
+            target="_blank"
+            rel="noreferrer"
+            data-i18n="footer.whatsapp"
+            >WhatsApp</a
+          >
+        </p>
+      </div>
+    </footer>
+    <script>
+      const footerYear = document.getElementById("footerYear");
+      if (footerYear) footerYear.textContent = String(new Date().getFullYear());
+      document.addEventListener("DOMContentLoaded", function () {
+        if (window.AOS) {
+          AOS.init({
+            duration: 900,
+            once: true,
+            offset: 80,
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
